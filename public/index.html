@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alvin Portfolio | Programmer & Freelancer</title>
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="stylesheet" href="../node_modules/hover.css/css/hover.css" />
+    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css" />
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Open+Sans:wght@300;400;700&family=Poppins&display=swap');
+    </style>
+  </head>
+  <body class="bg-blackmatte scrollbar scrollbar-thumb-turquoise scrollbar-track-darkerblackmatte">
+    <!-- Navbar  -->
+    <div class="navbar text-white hidden md:flex justify-between sticky top-0 py-6 bg-blackmatte z-50 px-7 md:px-28">
+      <div class="logo text-turquoise font-fredoka hvr-grow"><a href="#home">ALV</a></div>
+      <div class="navigation flex list-none font-bold font-open-sans">
+        <li class="ml-9 hover:text-turquoise">
+          <a href="#about">About</a>
+        </li>
+        <li class="ml-9 hover:text-turquoise">
+          <a href="#projects">Projects</a>
+        </li>
+        <li class="ml-9 hover:text-turquoise">
+          <a href="#contact">Contact</a>
+        </li>
+      </div>
+    </div>
+    <!--  End Navbar -->
+
+    <!-- Hamburger Navbar -->
+    <div class="hamburger flex md:hidden sticky top-0 bg-blackmatte justify-between px-10 py-6 z-50">
+      <div class="logo text-turquoise font-fredoka">
+        <a href="#home">ALV</a>
+      </div>
+      <div class="hamburger-button space-y-2">
+        <div class="w-8 h-0.5 bg-turquoise transform transition duration-500 ease-in-out line-hamburger"></div>
+        <div class="w-8 h-0.5 bg-turquoise transform transition duration-500 ease-in-out line-hamburger"></div>
+        <div class="w-8 h-0.5 bg-turquoise transform transition duration-500 ease-in-out line-hamburger"></div>
+      </div>
+    </div>
+
+    <div class="navbar-hamburger md:hidden text-turquoise list-none text-center items-center hidden justify-center fixed left-0 right-0 h-full bg-blackmatte top-0 bottom-0 z-50">
+      <ul class="w-fit flex-nowrap h-fit font-bold font-open-sans">
+        <li class="navham p-5 text-2xl sm:text-3xl">
+          <a href="#home">Home</a>
+        </li>
+        <li class="navham p-5 text-2xl sm:text-3xl">
+          <a href="#about">About</a>
+        </li>
+        <li class="navham p-5 text-2xl sm:text-3xl">
+          <a href="#projects">Projects</a>
+        </li>
+        <li class="navham p-5 text-2xl sm:text-3xl">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+      <div class="cross absolute bottom-10 border-2 p-2 rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-10 h-10">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </div>
+    </div>
+    <!-- End Hamburger Navbar -->
+
+    <div class="mx-7 md:mx-28">
+      <!-- Home -->
+      <div id="home" class="home flex flex-wrap-reverse xl:grid md:grid-cols-12 place-content-center items-center max-h-fit lg:h-[80vh]">
+        <div data-aos="fade-right" class="home-text text-white font-open-sans lg:order-1 w-[70vw] lg:w-[30vw] place-items-center text-center lg:text-start col-start-2 col-span-9">
+          <h1 class="welcome my-2 text-5xl md:text-7xl lg:text-8xl font-bold">Welcome,</h1>
+          <h2 class="my-2 text-xl md:text-2xl lg:text-4xl">
+            I'm <span class="my-2 text-turquoise font-bold">Alvin Adrianto,</span> <br />
+            Programmer & Freelancer.
+          </h2>
+          <p class="my-3 font-light text-xs md:text-sm lg:text-base">I like anything related to technology, assembly & aspires to create AI Jarvis</p>
+          <button onclick="window.location.href='#projects'" class="py-4 border-turquoise border-[1px] text-turquoise rounded-[10px] w-full font-bold hvr-shrink">See All My Projects</button>
+          <div class="my-2 contact-home md:flex justify-between">
+            <button onclick="window.location.href='#contact'" class="bg-turquoise text-blackmatte my-2 py-4 px-6 font-bold rounded-[10px] w-full md:w-3/6 items-start hvr-shrink">Contact Me</button>
+            <div class="icon-contact-home flex items-center justify-center w-full py-4 md:w-3/6">
+              <a href="www.linkedin.com/in/alvin-adrianto-765703211/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="turquoise" class="cursor-pointer hvr-grow mx-3 bi bi-linkedin" viewBox="0 0 16 16">
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                  />
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/_alvin.a.a/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="turquoise" class="cursor-pointer hvr-grow mx-3 bi bi-instagram" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                  />
+                </svg>
+              </a>
+              <a href="https://github.com/alvinadrianto" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="turquoise" class="cursor-pointer hvr-grow mx-3 bi bi-github" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                  />
+                </svg>
+              </a>
+              <a href="wa.me/6287784008675" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="turquoise" class="cursor-pointer hvr-grow mx-3 bi bi-whatsapp" viewBox="0 0 16 16">
+                  <path
+                    d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-left" class="relative image-text w-[200px] md:w-[250px] lg:w-[400px] place-self-end lg:order-2 inset-0 flex items-center justify-center">
+          <div class="circle absolute -z-10 bg-turquoise w-full h-3/4 lg:h-5/6 rounded-full bottom-0"></div>
+          <img src="../src/img/me.png" alt="" class="relative z-20 w-[200px] md:w-[300px] lg:w-[370px] rounded-[80px] h-full hvr-shrink" />
+        </div>
+      </div>
+      <!-- End Home -->
+
+      <!-- About -->
+      <div id="about" class="lg:grid lg:grid-cols-12 mt-24">
+        <h1 class="absolute right-0 text-turquoise font-open-sans font-bold opacity-20 text-[110px] lg:text-[250px]">About</h1>
+        <div class="about col-start-2 col-span-10">
+          <h1 data-aos="fade-up" class="text-white text-5xl md:text-7xl lg:text-8xl font-bold font-open-sans">
+            About
+            <span class="text-turquoise">me.</span>
+            <hr class="mt-5 w-[35vw] border-2 border-turquoise" />
+          </h1>
+          <div data-aos="fade-up" class="about-hero flex flex-wrap justify-center lg:inline-block lg:relative mt-10 text-white w-full rounded-md">
+            <img src="../src/img/me1.jpg" alt="" class="static hvr-grow-shadow lg:relative w-[80%] md:w-[300px] lg:w-[38%] md:h-[300px] lg:h-[60vh] object-cover rounded-lg z-10" />
+            <div
+              class="square static mt-10 lg:mt-0 lg:absolute bg-darkerblackmatte w-[80%] lg:w-full flex justify-center lg:justify-end items-center border-turquoise border-[1px] rounded-lg h-[90%] lg:h-[85%] lg:top-1/2 lg:transform lg:-translate-y-1/2 lg:pr-7"
+            >
+              <div class="nest flex lg:items-center w-[80%] lg:w-[58%] h-[85%] py-10 lg:h-full">
+                <p class="w-full h-fit lg:h-full flex lg:items-center font-poppins text-md xl:text-lg">
+                  I am a programmer and freelancer living in Indonesia. A tech enthusiast and aspiring to make AI like jarvis.
+                  <br />
+                  <br />
+                  Someone who is organized, problem solver, good time management, fast learner. I am a lover of anime and also play many games.
+                  <br />
+                  <br />
+                  Someone who does work independently and dependently. is making as many projects as possible.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="services bg-turquoise pt-16 pb-14 px-7 mt-20 rounded-md">
+            <div class="services-title text-blackmatte">
+              <h1 class="text-3xl md:text-4xl lg:text-6xl font-open-sans text-center font-bold">My Services</h1>
+              <hr class="border-2 border-blackmatte w-[50%] mx-auto mt-5" />
+            </div>
+            <div class="services-element justify-evenly flex flex-wrap mt-7">
+              <div data-aos="fade-right" class="w-full lg:w-[45%] text-center px-5 pt-5 mt-0 lg:mt-5">
+                <div class="icon w-full flex justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-pc-display-horizontal" viewBox="0 0 16 16">
+                    <path
+                      d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0h-13Zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5ZM12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0Zm2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0ZM1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1ZM1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25Z"
+                    />
+                  </svg>
+                </div>
+                <h1 class="font-bold font-open-sans text-lg mt-4">Front-end Web Development</h1>
+                <p class="mt-3 font-poppins">Front end web development services are available to help you create an attractive and responsive website appearance</p>
+              </div>
+              <div data-aos="fade-left" class="w-full lg:w-[45%] text-center px-5 pt-5 mt-5">
+                <div class="icon w-full flex justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="73" height="73" fill="currentColor" class="bi bi-display" viewBox="0 0 16 16">
+                    <path
+                      d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z"
+                    />
+                  </svg>
+                </div>
+                <h1 class="font-bold text-lg mt-3 font-open-sans">Web Design</h1>
+                <p class="mt-3 font-poppins">You can take advantage of the services of a web designer to create an attractive website display design that matches your brand image</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End About -->
+
+      <!-- Projects -->
+      <div id="projects" class="lg:grid lg:grid-cols-12 mt-40">
+        <h1 class="absolute right-0 lg:left-0 text-turquoise font-open-sans -z-10 font-bold opacity-20 text-[110px] lg:text-[250px]">Projects</h1>
+        <div class="projects col-start-2 col-span-10">
+          <h1 data-aos="fade-up" class="text-white text-right text-5xl md:text-7xl lg:text-8xl font-bold font-open-sans">
+            My
+            <span class="text-turquoise">Projects.</span>
+            <hr class="mt-5 ml-auto w-[40vw] border-2 border-turquoise" />
+          </h1>
+          <div class="nest-see-all w-full flex justify-end">
+            <button data-aos="fade-up" class="border-[1px] border-turquoise rounded-md mt-5 lg:mt-10 text-turquoise font-open-sans font-bold px-3 bg-blackmatte py-2 hvr-shrink">See All</button>
+          </div>
+          <div class="project-hero mt-5 lg:mt-10 text-white w-full h-fit rounded-md">
+            <div data-aos="fade-up" class="project bg-blackmatte border-turquoise border-[1px] mb-10 rounded-md">
+              <img src="../src/img/example-landing-page.PNG" alt="" class="w-full object-cover rounded-md h-[250px]" />
+              <div class="text-project text-center py-7 px-5">
+                <p class="font-bold text-turquoise font-open-sans">Example Landing Page</p>
+                <hr class="border-[1px] border-turquoise w-[50%] mx-auto my-2" />
+                <p class="font-poppins">An example web landing page for a school assignment.</p>
+                <button class="bg-turquoise font-open-sans text-blackmatte px-5 font-bold py-2 mt-4 rounded-md hvr-shrink">
+                  <a href="https://alvinadrianto.github.io/example-landing-page/" target="_blank">Visit</a>
+                </button>
+              </div>
+            </div>
+            <div data-aos="fade-up" class="project bg-blackmatte border-turquoise border-[1px] mb-10 rounded-md">
+              <img src="../src/img/remember-pattern.PNG" alt="" class="w-full object-cover rounded-md h-[250px]" />
+              <div class="text-project text-center py-7 px-5">
+                <p class="font-bold text-turquoise font-open-sans">Remember Pattern</p>
+                <hr class="border-[1px] border-turquoise w-[50%] mx-auto my-2" />
+                <p class="font-poppins">Remaking simple games like the start reactor task in the game among us.</p>
+                <button class="bg-turquoise font-open-sans text-blackmatte px-5 font-bold py-2 mt-4 rounded-md hvr-shrink">
+                  <a href="https://alvinadrianto.github.io/remember-pattern/" target="_blank">Visit</a>
+                </button>
+              </div>
+            </div>
+            <div data-aos="fade-up" class="project bg-blackmatte border-turquoise border-[1px] mb-10 rounded-md">
+              <img src="../src/img/re-design-smartschool.PNG" alt="" class="w-full object-cover rounded-md object-bottom h-[250px]" />
+              <div class="text-project text-center py-7 px-5">
+                <p class="font-bold text-turquoise font-open-sans">Re-design Smartschool</p>
+                <hr class="border-[1px] border-turquoise w-[50%] mx-auto my-2" />
+                <p class="font-poppins">This project is just a design. re-designed a web from my old school.</p>
+                <button class="bg-turquoise font-open-sans text-blackmatte px-5 font-bold py-2 mt-4 rounded-md hvr-shrink">
+                  <a href="https://www.figma.com/file/bSrza9xIo24ImD5Cd7Z6O1/Re-design-Smartschool?t=XnDkbSa4Ez0Xzin0-1" target="_blank">Visit</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Projects -->
+
+      <!-- Contact -->
+      <div id="contact" class="lg:grid lg:grid-cols-12 mt-24">
+        <h1 class="absolute right-0 text-turquoise font-open-sans -z-10 font-bold opacity-20 text-[110px] lg:text-[250px]">Contact</h1>
+        <div class="contact col-start-2 col-span-10">
+          <h1 data-aos="fade-up" class="text-white text-5xl md:text-7xl lg:text-8xl font-bold font-open-sans">
+            Contact
+            <span class="text-turquoise">me.</span>
+            <hr class="mt-5 w-[40vw] border-2 border-turquoise" />
+          </h1>
+          <div class="contact-hero mt-8 lg:flex items-center justify-between h-fit">
+            <form
+              name="form-contact"
+              data-aos="fade-right"
+              action="https://script.google.com/macros/s/AKfycbzqLpXRxHlSI4Tu4HDlA37wKChSEEUoa6I6s-lMFzVVPLq05KOL4EOhGxUimPpJW3IT/exec"
+              class="form-contact w-full h-full text-turquoise mb-8 lg:mb-0 lg:w-[50%]"
+              method="post"
+            >
+              <div class="flex justify-between">
+                <input type="text" placeholder="Name" id="nama" name="nama" class="focus:bg-blackmatte bg-blackmatte font-poppins py-3 rounded-md px-3 border-turquoise border-[1px] w-[49%] inline" required autocomplete="off" />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  id="email"
+                  name="email"
+                  id=""
+                  class="focus:bg-blackmatte bg-blackmatte font-poppins py-3 rounded-md px-3 border-turquoise w-[49%] border-[1px] inline-block"
+                  required
+                  autocomplete="off"
+                />
+              </div>
+              <input type="text" placeholder="Subject" id="subjek" name="subjek" id="" class="bg-blackmatte font-poppins mt-5 py-3 rounded-md px-3 border-turquoise border-[1px] block w-full" required autocomplete="off" />
+              <textarea placeholder="Message" id="pesan" class="w-full font-poppins mt-5 py-3 px-3 bg-blackmatte border-turquoise border-[1px] rounded-md block" required name="pesan" id="" cols="30" rows="10" autocomplete="off"></textarea>
+              <button type="submit" class="bg-turquoise send-message font-open-sans text-blackmatte mt-5 py-4 px-6 font-bold rounded-[10px] w-full items-start hvr-shrink">
+                <p class="send-btn">Send Message</p>
+                <p class="send-alerts hidden">
+                  Success
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="inline bi bi-check-square-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"
+                    />
+                  </svg>
+                </p>
+                <div role="status" class="loading hidden">
+                  <svg aria-hidden="true" class="inline w-8 h-8 mr-2 text-blackmatte animate-spin fill-turquoise" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                      fill="currentFill"
+                    />
+                  </svg>
+                  <span class="sr-only">Loading...</span>
+                </div>
+              </button>
+            </form>
+            <div data-aos="fade-left" class="address bg-turquoise w-full lg:w-[45%] h-full rounded-md break-words p-7">
+              <h1 class="font-bold font-open-sans">
+                Street Address
+                <svg xmlns="http://www.w3.org/2000/svg" class="inline" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                </svg>
+              </h1>
+              <p class="mb-5 font-poppins">Gg. Perintis I Blok Perintis 1 No.46A, RT.6/RW.14, Cipinang Muara, Kecamatan Jatinegara, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13420</p>
+              <h1 class="font-bold inline font-open-sans">
+                Email Address
+                <svg xmlns="http://www.w3.org/2000/svg" class="inline" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"
+                  />
+                  <path
+                    d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"
+                  />
+                </svg>
+              </h1>
+              <p class="mb-5 font-poppins">alvin.stream52@gmail.com</p>
+              <h1 class="font-bold inline font-open-sans">
+                Phone Address
+                <svg xmlns="http://www.w3.org/2000/svg" class="inline" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                  />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="inline" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                  <path
+                    d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+                  />
+                </svg>
+              </h1>
+              <p class="mb-5 font-poppins">
+                <a href="wa.me/6287784008675" target="_blank" class="hover:underline">+6287784008675</a>
+              </p>
+              <h1 class="font-bold inline font-open-sans">
+                Linkedin
+                <svg xmlns="http://www.w3.org/2000/svg" class="inline" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                  />
+                </svg>
+              </h1>
+              <p class="mb-5 font-poppins w-full">
+                <a href="www.linkedin.com/in/alvin-adrianto-765703211/" target="_blank" class="hover:underline">www.linkedin.com/in/alvin-adrianto-765703211/</a>
+              </p>
+              <h1 class="font-bold inline font-open-sans">
+                Instagram
+                <svg xmlns="http://www.w3.org/2000/svg" class="inline" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                  />
+                </svg>
+              </h1>
+              <p class="mb-5 font-poppins">
+                <a href="https://www.instagram.com/_alvin.a.a/" target="_blank" class="hover:underline">https://www.instagram.com/_alvin.a.a/</a>
+              </p>
+              <h1 class="font-bold inline font-open-sans">
+                Github
+                <svg xmlns="http://www.w3.org/2000/svg" class="inline" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                  />
+                </svg>
+              </h1>
+              <p class="font-poppins"><a href="https://github.com/alvinadrianto" target="_blank" class="hover:underline">https://github.com/alvinadrianto</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Contact -->
+    </div>
+
+    <!-- Footer -->
+    <div class="footer mt-20 bg-turquoise font-bold font-open-sans py-5 text-center text-xs md:text-sm">© Copyright 2023 | built by Alvin Adrianto</div>
+    <!-- End Footer -->
+
+    <script src="../node_modules/aos/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+
+    <!-- <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbx8GTuzivbDd9zcJ6tz5aLja3MgR8OTncl7XS0RSd8A3kR99zpNBe6aRqRLI1jMVyKI/exec';
+      const form = document.forms['form-contact'];
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then((response) => console.log('Success!', response))
+          .catch((error) => console.error('Error!', error.message));
+      });
+    </script> -->
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbx8GTuzivbDd9zcJ6tz5aLja3MgR8OTncl7XS0RSd8A3kR99zpNBe6aRqRLI1jMVyKI/exec';
+      const form = document.forms['form-contact'];
+      const btnKirim = document.querySelector('.send-btn');
+      const btnLoading = document.querySelector('.loading');
+      const myAlert = document.querySelector('.send-alerts');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        // ketika tombol submit diklik
+        // tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle('hidden');
+        btnKirim.classList.toggle('hidden');
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then((response) => {
+            // tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle('hidden');
+            // tampilkan alert
+            myAlert.classList.toggle('hidden');
+            // reset form
+            form.reset();
+            console.log('Success!', response);
+          })
+          .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
