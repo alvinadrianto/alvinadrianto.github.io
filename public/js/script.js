@@ -21,3 +21,17 @@ navHam.forEach((nh) => {
     navbarHamburger.classList.toggle('hidden');
   });
 });
+
+document.querySelectorAll('.navmain').forEach(function (element) {
+  element.addEventListener('click', function (e) {
+    const tujuan = this.getAttribute('href');
+    const elemenTujuan = document.querySelector(tujuan);
+
+    window.scrollTo({
+      top: elemenTujuan.offsetTop - 100,
+      behavior: 'smooth',
+    });
+
+    e.preventDefault();
+  });
+});
