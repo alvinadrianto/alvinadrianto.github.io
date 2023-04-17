@@ -3,11 +3,25 @@ const navbarHamburger = document.querySelector('.navbar-hamburger');
 const navHam = document.querySelectorAll('.navham');
 const lineHamburger = document.querySelectorAll('.line-hamburger');
 const crossButton = document.querySelector('.cross');
+const closeNavham = document.querySelector('.close-navham');
 
 hamburgerButton.addEventListener('click', () => {
   navbarHamburger.classList.toggle('flex');
   navbarHamburger.classList.toggle('hidden');
-  lineHamburger[1].classList.toggle('invisible');
+
+  navHam[0].classList.add('animate__animated', 'animate__fadeInLeft');
+  navHam[2].classList.add('animate__animated', 'animate__fadeInLeft');
+  navHam[1].classList.add('animate__animated', 'animate__fadeInRight');
+  navHam[3].classList.add('animate__animated', 'animate__fadeInRight');
+  closeNavham.classList.add('animate__animated', 'animate__fadeInUpBig');
+});
+
+closeNavham.addEventListener('click', () => {
+  navHam[0].classList.remove('animate__animated', 'animate__fadeInLeft');
+  navHam[2].classList.remove('animate__animated', 'animate__fadeInLeft');
+  navHam[1].classList.remove('animate__animated', 'animate__fadeInRight');
+  navHam[3].classList.remove('animate__animated', 'animate__fadeInRight');
+  closeNavham.classList.remove('animate__animated', 'animate__fadeInUpBig');
 });
 
 crossButton.addEventListener('click', () => {

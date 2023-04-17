@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="css/output.css" />
     <link rel="stylesheet" href="../public/css/hover.css" />
     <link rel="stylesheet" href="../public/css/aos.css" />
+    <link rel="stylesheet" href="../public/css/animate.css" />
     <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon" />
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Open+Sans:wght@300;400;700&family=Poppins&display=swap');
     </style>
   </head>
-  <body class="bg-blackmatte scrollbar scrollbar-thumb-turquoise scrollbar-track-darkerblackmatte">
+  <body class="bg-blackmatte overflow-x-hidden scrollbar scrollbar-thumb-turquoise scrollbar-track-darkerblackmatte">
     <!-- Navbar  -->
     <div class="navbar text-white hidden md:flex justify-between sticky top-0 py-6 bg-blackmatte z-50 px-7 md:px-28">
       <div class="logo text-turquoise font-fredoka text-sm hvr-grow"><a class="navmain" href="#home">ALV</a></div>
@@ -36,32 +37,34 @@
       <div class="logo text-turquoise font-fredoka">
         <a href="#home">ALV</a>
       </div>
-      <div class="hamburger-button space-y-2">
+      <div class="hamburger-button space-y-2 cursor-pointer hvr-shrink">
         <div class="w-8 h-0.5 bg-turquoise transform transition duration-500 ease-in-out line-hamburger"></div>
         <div class="w-8 h-0.5 bg-turquoise transform transition duration-500 ease-in-out line-hamburger"></div>
         <div class="w-8 h-0.5 bg-turquoise transform transition duration-500 ease-in-out line-hamburger"></div>
       </div>
     </div>
 
-    <div class="navbar-hamburger md:hidden text-turquoise list-none text-center items-center hidden justify-center fixed left-0 right-0 h-full bg-blackmatte top-0 bottom-0 z-50">
+    <div class="navbar-hamburger hidden md:hidden text-turquoise list-none text-center items-center justify-center fixed left-0 right-0 h-full bg-blackmatte top-0 bottom-0 z-50">
       <ul class="w-fit flex-nowrap h-fit font-bold font-open-sans">
-        <li class="navham p-5 text-2xl sm:text-3xl">
-          <a class="navmain" href="#home">Home</a>
+        <li class="navham p-5 text-2xl sm:text-3xl hover:line-through">
+          <a class="navmain hvr-grow" href="#home">Home</a>
         </li>
-        <li class="navham p-5 text-2xl sm:text-3xl">
-          <a class="navmain" href="#about">About</a>
+        <li class="navham p-5 text-2xl sm:text-3xl hover:line-through">
+          <a class="navmain hvr-grow" href="#about">About</a>
         </li>
-        <li class="navham p-5 text-2xl sm:text-3xl">
-          <a class="navmain" href="#projects">Projects</a>
+        <li class="navham p-5 text-2xl sm:text-3xl hover:line-through">
+          <a class="navmain hvr-grow" href="#projects">Projects</a>
         </li>
-        <li class="navham p-5 text-2xl sm:text-3xl">
-          <a class="navmain" href="#contact">Contact</a>
+        <li class="navham p-5 text-2xl sm:text-3xl hover:line-through">
+          <a class="navmain hvr-grow" href="#contact">Contact</a>
         </li>
       </ul>
-      <div class="cross absolute bottom-10 border-2 p-2 rounded-full">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-10 h-10">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-        </svg>
+      <div class="close-navham cross absolute bottom-10">
+        <div class="button-wrapper inline-block hvr-shrink border-2 p-2 rounded-full cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-10 h-10">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </div>
       </div>
     </div>
     <!-- End Hamburger Navbar -->
@@ -188,9 +191,12 @@
             <span class="text-turquoise">Projects.</span>
             <hr class="mt-5 ml-auto w-[40vw] border-2 border-turquoise" />
           </h1>
-          <div class="nest-see-all w-full flex justify-end">
-            <button data-aos="fade-up" class="border-[1px] border-turquoise rounded-md mt-5 lg:mt-10 text-turquoise font-open-sans font-bold px-3 bg-blackmatte py-2 hvr-shrink text-sm">See all</button>
+          <div class="nest-see-all w-full mt-5 lg:mt-10 flex justify-end">
+            <div class="button-wrapper h-fit hvr-shrink" style="display: inline-block">
+              <button data-aos="fade-up" class="border-[1px] border-turquoise rounded-md text-turquoise font-open-sans font-bold px-3 bg-blackmatte py-2 text-sm">See all</button>
+            </div>
           </div>
+
           <div class="project-hero mt-5 lg:mt-10 text-white w-full h-fit rounded-md">
             <div data-aos="fade-up" class="project bg-blackmatte border-turquoise border-[1px] mb-10 rounded-md">
               <img src="../src/img/example-landing-page.PNG" alt="" class="w-full object-cover rounded-md h-[250px]" />
