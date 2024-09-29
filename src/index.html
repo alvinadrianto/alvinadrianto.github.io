@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="overflow-x-hidden bg-primary text-white mx-5 md:mx-20 pb-16">
+    <!-- Header -->
+    <header class="flex justify-between mt-7">
+      <p class="text-lg md:text-xl font-caveat cursor-pointer">Alpin</p>
+      <a href="mailto:alvin.stream52@gmail.com" class="text-lg md:text-xl font-ibm-plex-mono hover:underline">Contact</a>
+    </header>
+
+    <!-- Projects Section -->
+    <div class="projects-section mt-20">
+      <div class="flex flex-col lg:flex-row justify-between w-full">
+        <div data-aos="fade-right" data-aos-once="true" class="w-full lg:w-4/6 flex flex-col justify-between min-h-[200px]">
+          <h1 id="my-projects-text" class="text-4xl md:text-6xl font-ibm-plex-mono">MY PROJECTS?</h1>
+          <hr class="mt-5 w-full lg:w-3/4" />
+          <p class="text-lg md:text-xl font-light font-ibm-plex-mono mt-5 w-full lg:w-5/6">i’m sorry, not ready. but i have made a useless web game.</p>
+          <a href="https://alvinadrianto.github.io/remember-pattern/" class="flex-grow mt-7">
+            <button class="border border-white font-ibm-plex-mono w-full lg:w-5/6 h-full hover:bg-white hover:text-primary transition-colors duration-300">->just check it out</button>
+          </a>
+        </div>
+        <img data-aos="fade-left" data-aos-once="true" src="./img/remember-pattern.png" alt="" class="w-full lg:w-1/2 border border-white transform transition duration-500 hover:scale-110 hover:brightness-50 cursor-pointer mt-10 lg:mt-0" />
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="about-section mt-16">
+      <div data-aos="fade-right" data-aos-once="true" class="flex flex-col md:flex-row items-center">
+        <img src="./img/IMG_0115.jpg" alt="" class="rounded-full w-6/12 md:w-2/12 mr-0 md:mr-10 transform transition duration-500 hover:scale-110 hover:brightness-50 cursor-pointer" />
+        <h1 id="hover-effect" class="text-4xl md:text-6xl font-ibm-plex-mono mt-5 md:mt-0">Alvin Adrianto.</h1>
+      </div>
+      <hr data-aos="fade-left" data-aos-once="true" class="mt-7" />
+      <div data-aos="fade-right" data-aos-once="true" class="social-media flex flex-col md:flex-row mt-5">
+        <div class="x mb-5 md:mb-0 md:mr-5">
+          <img src="./img/x logo.jpg" alt="" class="w-10 inline mr-2" />
+          <a href="https://x.com/dumplaycrypto" class="inline font-pixelify-sans hover:underline">@dumplaycrypto</a>
+        </div>
+        <div class="discord">
+          <img src="./img/discord logo.png" alt="" class="w-10 inline mr-2" />
+          <a href="https://discord.com/users/510787550500356096" class="inline font-pixelify-sans hover:underline">alpin6619</a>
+        </div>
+      </div>
+      <p data-aos="fade-up" data-aos-once="true" class="text-sm md:text-base font-ibm-plex-mono font-light mt-5">
+        Hi, I'm Alvin, a dedicated developer with a deep interest in exploring various aspects of technology and an emerging enthusiasm for the web3 ecosystem. While my core focus is on general development, spanning from web applications to
+        problem-solving solutions, I'm also intrigued by how blockchain and decentralized technologies are reshaping the future.
+      </p>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      document.addEventListener('DOMContentLoaded', function () {
+        // Untuk "MY PROJECTS?"
+        const projectsTextElement = document.getElementById('my-projects-text');
+        const projectsTextContent = projectsTextElement.textContent;
+        projectsTextElement.innerHTML = ''; // Kosongkan elemen terlebih dahulu
+
+        // Loop untuk membuat span per huruf
+        for (let char of projectsTextContent) {
+          const span = document.createElement('span');
+          span.textContent = char === ' ' ? '\u00A0' : char; // Ganti spasi dengan non-breaking space
+          span.classList.add('zoom');
+          projectsTextElement.appendChild(span);
+        }
+      });
+
+      document.addEventListener('DOMContentLoaded', function () {
+        const textElement = document.getElementById('hover-effect');
+        const textContent = textElement.textContent;
+        textElement.innerHTML = ''; // Kosongkan elemen terlebih dahulu
+
+        // Loop untuk membuat span per huruf, termasuk spasi
+        for (let char of textContent) {
+          const span = document.createElement('span');
+          span.textContent = char === ' ' ? '\u00A0' : char; // Ganti spasi dengan non-breaking space
+          span.classList.add('zoom');
+          textElement.appendChild(span);
+        }
+      });
+    </script>
+  </body>
+</html>
